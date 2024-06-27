@@ -1,0 +1,59 @@
+.metadata/*
+
+# Ignore build and ip_repo folders in hardware directory
+hardware/build
+hardware/ip_repo
+
+# Ignore everything in software directory
+software/*
+# but not the software/freertos-blinky directory
+!software/freertos-blinky
+!software/freertos-queue
+# Ignore everything in software/freertos-blinky directory
+software/freertos-blinky/*
+software/freertos-queue/*
+# but not the software/freertos-blinky/src directory
+!software/freertos-blinky/src
+!software/freertos-queue/src
+
+# Ignore everything in freertos-blinky directory
+freertos-blinky/*
+# but not the freertos-blinky/Core directory
+!freertos-blinky/Core
+# Ignore everything in freertos-blinky/Core directory
+freertos-blinky/Core/*
+!freertos-blinky/Core/Src
+
+freertos-blinky/Core/Src/*
+!freertos-blinky/Core/Src/main.c
+
+
+freertos-task-priority/*
+!freertos-task-priority/Core
+
+freertos-task-priority/Core/*
+!freertos-task-priority/Core/Src
+
+freertos-task-priority/Core/Src/*
+!freertos-task-priority/Core/Src/main.c
+
+
+freertos-task-suspend-resume/*
+!freertos-task-suspend-resume/Core
+
+freertos-task-suspend-resume/Core/*
+!freertos-task-suspend-resume/Core/Src
+
+freertos-task-suspend-resume/Core/Src/*
+!freertos-task-suspend-resume/Core/Src/main.c
+
+
+
+freertos-binary-semaphore/*
+!freertos-binary-semaphore/Core
+
+freertos-binary-semaphore/Core/*
+!freertos-binary-semaphore/Core/Src
+
+freertos-binary-semaphore/Core/Src/*
+!freertos-binary-semaphore/Core/Src/main.c
